@@ -120,6 +120,7 @@
 				TargetAttributes = {
 					C67C4DEE1BDA086200F17CFD = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4S56J2M6HA;
 					};
 				};
 			};
@@ -275,10 +276,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S56J2M6HA;
 				INFOPLIST_FILE = DemoAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.DemoAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = zzjf.DemoAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -287,10 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S56J2M6HA;
 				INFOPLIST_FILE = DemoAVPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.DemoAVPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = zzjf.DemoAVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

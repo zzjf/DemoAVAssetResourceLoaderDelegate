@@ -93,7 +93,18 @@
 
 - (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest
 {
-    [self removeRequest:loadingRequest];
+    //[self removeRequest:loadingRequest];
+    if (!loadingRequest) {
+        return;
+    }
+    NSLog(@"cancel request: %@", loadingRequest.request.allHTTPHeaderFields[@"Range"]);
+    NSString * key = [NSString stringWithFormat:@"%p", loadingRequest];
+
+    NSURLConnection * c = _connectionMap[key];
+    [c cancel];
+
+    [_connectionMap removeObjectForKey:key];
+    [_requestMap removeObjectForKey:key];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
